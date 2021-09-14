@@ -2,6 +2,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 
+axios.defaults.xsrfCookieName = "csrftoken";
+axios.defaults.xsrfHeaderName = "X-CSRFToken";
+
 function App() {
   return (
     <div className="App">
